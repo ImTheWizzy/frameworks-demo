@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Materialize</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Minified jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Logo</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Sass</a></li>
+          <li><a href="#">Components</a></li>
+          <li><a href="#">Javascript</a></li>
+          <li><a href="#">Mobile</a></li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#">Sass</a></li>
+      <li><a href="#">Components</a></li>
+      <li><a href="#">Javascript</a></li>
+      <li><a href="#">Mobile</a></li>
+    </ul>
+
+    <!-- Just used for spacing -->
+    <div class="row" style="height: 25px;"></div>
+
+    <div class="row">
+      <div class="col red s1">1</div>
+      <div class="col blue s1">2</div>
+      <div class="col red s1">3</div>
+      <div class="col blue s1">4</div>
+      <div class="col red s1">5</div>
+      <div class="col blue s1">6</div>
+      <div class="col red s1">7</div>
+      <div class="col blue s1">8</div>
+      <div class="col red s1">9</div>
+      <div class="col blue s1">10</div>
+      <div class="col red s1">11</div>
+      <div class="col blue s1">12</div>
+    </div>
+    <!-- Just used for spacing -->
+    <div style="height: 25px;"></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col s3 l3 red">a</div>
+        <div class="col s6 l6 blue">a</div>
+        <div class="col s3 l3 green">a</div>
+      </div>
+    </div>
+    <!-- Just used for spacing -->
+    <div style="height: 25px;"></div>
+
+    <div class="row">
+      <div class="col s12 red darken-2" style="font-size: 4rem;color:white;">This is always full-width (col s12)</div>
+    </div>
+    <!-- Just used for spacing -->
+    <div style="height: 25px;"></div>
+
+    <div class="row">
+      <div class="col s12 m6 blue darken-2" style="font-size: 4rem;color:white;">Full-width on mobile (col s12 m6)</div>
+    </div>
+    <!-- Just used for spacing -->
+    <div style="height: 25px;"></div>
+
+    <div class="row">
+      <div class="col s12 m6 l3 green darken-2" style="font-size: 4rem;color:white;">(col s12 m6 l3)</div>
+    </div>
+    <!-- Just used for spacing -->
+    <div style="height: 25px;"></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m3 l3 blue darken-2 valign-wrapper" style="height: 100px;font-size: 2rem;color:white;">(s12 m3 l3)</div>
+        <div class="col s12 m6 l6 amber darken-2 valign-wrapper" style="height: 100px;font-size: 2rem;color:white;">(s12 m6 l6)</div>
+        <div class="col s12 m3 l3 teal darken-2 valign-wrapper" style="height: 100px;font-size: 2rem;color:white;">(s12 m3 l3)</div>
+      </div>
+
+      <!-- Buttons -->
+      <a class="btn-large disabled">Button</a>
+      <a class="waves-effect waves-light btn-large">Button</a>
+      <a class="btn-large deep-orange lighten-1 tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Hover me!</a>
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-dark deep-purple lighten-1 btn-large modal-trigger" href="#modal1"><i class="material-icons left">cloud</i>Modal</a>
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+      </div>
+
+      <a class="btn-floating btn-large waves-effect waves-light red" onclick="M.toast({html: 'I am a toast. Tremble before my might', classes: 'rounded'})"><i class="material-icons">add</i></a>
+
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+          <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+          <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+          <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+          <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+      </div>
+
+      <!-- Switch -->
+      <div class="switch">
+        <label>
+          Off
+          <input type="checkbox">
+          <span class="lever"></span>
+          On
+        </label>
+      </div>
+      <p>
+        <label>
+          <input type="checkbox" class="filled-in" checked="checked" />
+          <span>Filled in</span>
+        </label>
+      </p>
+
+      <div class="carousel carousel-slider center">
+        <div class="carousel-fixed-item center">
+          <a class="btn waves-effect white grey-text darken-text-2">button</a>
+        </div>
+        <div class="carousel-item red white-text" href="#one!">
+          <h2>First Panel</h2>
+          <p class="white-text">This is your first panel</p>
+        </div>
+        <div class="carousel-item amber darken-2 white-text" href="#two!">
+          <h2>Second Panel</h2>
+          <p class="white-text">This is your second panel</p>
+        </div>
+        <div class="carousel-item green white-text" href="#three!">
+          <h2>Third Panel</h2>
+          <p class="white-text">This is your third panel</p>
+        </div>
+        <div class="carousel-item blue white-text" href="#four!">
+          <h2>Fourth Panel</h2>
+          <p class="white-text">This is your fourth panel</p>
+        </div>
+      </div>
+      <!-- Just used for spacing -->
+      <div style="height: 500px;"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Initializing mobile collapse button -->
+    <script type="text/javascript">
+      $(function() {
+        $(document).ready(function(){
+          $('.sidenav').sidenav();
+        });
+
+        $(document).ready(function(){
+          $('.tooltipped').tooltip();
+        });
+
+        $(document).ready(function(){
+          $('.fixed-action-btn').floatingActionButton();
+        });
+
+        $(document).ready(function(){
+          $('.modal').modal();
+        });
+
+        $('.carousel.carousel-slider').carousel({
+          fullWidth: true,
+          indicators: true
+        });
+      });
+    </script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
